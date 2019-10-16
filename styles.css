@@ -33,6 +33,10 @@ body {
     margin: 0 0 0 10px;
 }
 
+.fa-circle {
+    color: green;
+}
+
 .channel-list {
     display: flex;
     flex-direction: column;
@@ -42,6 +46,8 @@ body {
 
 .nav-bar h3 {
     margin: 50px 0 0 10px;
+     font-size: 20px; 
+    font-weight: 100;
 }
 
 .nav-bar ul {
@@ -57,6 +63,8 @@ body {
     color: white;
     display: block;
     padding: 5px 10px;
+    font-size: 20px; 
+    font-weight: 100;
 }
 
 .nav-bar a:hover {
@@ -73,7 +81,7 @@ body {
     justify-content: flex-end;
     flex-direction: column;
     color: lightgray;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .channel-description
@@ -92,13 +100,18 @@ body {
     padding: 10px;
 }
 
+.section-header h2 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
 .message-container {
     display: flex;
     flex-direction: column; 
     justify-content: flex-end;
     overflow-y: auto;
     height: 100%;
-
+    padding-top: 10px;
 }
 
 .pub-date{
@@ -113,13 +126,15 @@ body {
 }
 .messages{
     flex: 1 1 auto;
-    overflow-y: auto;
+    overflow-y: scroll;
     min-height: 0px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .message-user-info{
-    margin: 5px;
-    padding-left: 5px;
+    margin: 0;
+    padding-left: 10px;
 }
 
 .message-text{
@@ -128,36 +143,30 @@ body {
 }
 
 .slack-footer {
-    height: 130px;
+    height: 80px;
     display: flex;
     border: solid lightgray 1px;
     margin: 5px;
+    flex-shrink: 0;
+
 }
 
 .slack-footer input {
     width: 100%;
     border: 0;
     border-left:solid lightgray 1px;
+    font-size: 17px;
 }
 
 .slack-footer input::-webkit-input-placeholder {
     padding-left: 10px;
     color: lightgray;
+  
 }
 
 .slack-footer i {
     align-self: center;
     padding: 10px;
-    cursor: pointer;
     color: lightgray;
 }
-
-
-
-
-
-
-
-
-
 
